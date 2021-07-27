@@ -1,6 +1,7 @@
 <?php
 
 include('conexao.php');
+$pagina = "Cadastro";
 
 $usuario = ($_POST['usuario']);
 $senha = ($_POST['senha']);
@@ -20,7 +21,7 @@ if ($resultado_consulta) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Login PHP - Página de Cadastro</title>
+    <title>Login PHP - <?= $pagina ?></title>
   </head>
 
   <body>
